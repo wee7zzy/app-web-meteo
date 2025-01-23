@@ -21,3 +21,12 @@ img{
     font-size: x-large;
 
 }
+
+section{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+section .card{
+    flex-shrink: 0;
+}
