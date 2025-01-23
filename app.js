@@ -1,6 +1,7 @@
 const apiKey='cfdad4efde60910025dc92fb00b7c808';
-const apiUrl='https://api.openweathermap.org/data/2.5/weather?units=metric&q=beni mellal';
+const apiUrl='https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
 const searchbox=document.getElementById("Srch");
+const searchbtn=document.getElementById("btn");
 
 async function getWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}` );
@@ -13,5 +14,6 @@ async function getWeather(city) {
     
     console.log(data);
 }
-
-getWeather(searchbox.value);
+searchbtn.addEventListener('click',()=>{
+    getWeather(searchbox.value.trim());
+})
