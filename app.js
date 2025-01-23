@@ -11,9 +11,15 @@ async function getWeather(city) {
     document.getElementById("ville").innerHTML=data.name;
     document.getElementById("hum").innerHTML=data.main.humidity + "%";
     document.getElementById("wd").innerHTML=data.wind.speed + "km/h";
-    
+    document.getElementById("descp").innerHTML=data.weather[0].description;
+    document.getElementById("ImgP").src=document.getElementById("ImgP").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
     console.log(data);
 }
 searchbtn.addEventListener('click',()=>{
     getWeather(searchbox.value.trim());
 })
+
+
+
+
