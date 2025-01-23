@@ -5,7 +5,19 @@
     box-sizing: border-box;
 }
 
-main{
-    background-image: url(image/pexels-pixabay-531767.jpg);
-    background-size: cover;
+.card{
+    background-color: rgba(0, 0, 0, 0.475);
+    border-radius: 20px;
+}
+
+img{
+    width: 400px;
+}
+
+#im1{
+    width: 100px;
+}
+.card h1{
+    font-size: x-large;
+
 }

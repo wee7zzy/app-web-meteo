@@ -4,55 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>Document</title>
+    
 </head>
-<body class="bg-cover bg-no-repeat min-h-screen  bg-center" style="background-image: url(image/pexels-pixabay-531767.jpg);">
-    <header class="flex justify-between">
+<body class="bg-cover bg-no-repeat min-h-screen bg-center" style="background-image: url(image/pexels-pixabay-531767.jpg);">
+    <header class="flex flex-col lg:flex-row justify-between p-4 lg:p-8">
 
-        <div class="flex gap-20">
+        <div class="mt-6 lg:mt-0 w-full max-w-sm mx-auto lg:mx-0 opacity-75">
+            <div class="flex items-center bg-white rounded-xl shadow-md p-3 w-full">
+                <input type="text" placeholder="Enter your city" class="focus:outline-none text-gray-700 flex-grow" />
+                <img src="image/search.png" alt="Search icon" class="w-5 h-5 ml-3">
+            </div>
+        </div>
 
-            <div class="weather w-96 ml-3">
-                <img class="" src="image/cloudy.png" alt="">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
+
+            <div class="text-center lg:text-left  lg:mt-20">
+                <h1 id="tempM" class="text-5xl lg:text-7xl text-black">23 °C</h1>
+                <p id="ville" class="text-white font-mono border-r ">BENI MELLAl,lundi</p>
                 
-            </div>
-    
-            <div class="mt-40">
-                <h1 class="text-7xl">23 °C</h1>
-                <p class="text-white font-mono">BENI MELLAL</p>
-                <div class="flex gap-10 mt-5">
-                    <div>
-                        <img src="image/icons8-humidity-50.png" alt="">
-                        <h2>humidity</h2>
-                        <p>30%</p>
+                <div class="flex justify-center lg:justify-start gap-10 mt-5">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <img class="w-12" src="image/icons8-humidity-50.png" alt="">
+                        <h2  class="font-mono">Humidity</h2>
+                        <p id="hum" class="font-mono">30%</p>
                     </div>
-                    <div>
-                        <img width="50" src="image/icons8-winds-66.png" alt="">
-                        <h2>Wind Speed</h2>
-                        <p>12 km/h</p>
+                    <div class="flex flex-col items-center lg:items-start">
+                        <img class="w-12" src="image/icons8-winds-66.png" alt="">
+                        <h2 class="font-mono">Wind Speed</h2>
+                        <p id="wd" class="font-mono">12 km/h</p>
                     </div>
-                    
                 </div>
-    
             </div>
 
+            <div class="weather w-full lg:w-96 mb-6  lg:mb-0">
+                <img id="ImgP" class="mx-auto" src="image/cloudy.png" alt="">
+            </div> 
         </div>
-        
-
-
-        <div class=" mb-8 p-20 opacity-75">
-            <div class="flex items-center bg-white rounded-xl shadow-md p-3 w-full max-w-sm ">
-                <input type="text" placeholder="Enter your city" class="focus:outline-none text-gray-700 flex-grow w-96 " />
-                <img src="image/search.png" alt="Search icon" class="w-5 h-5 ml-3 ">
-            </div>
-        </div>
-    
-        
     </header>
-    
 
-    
-        <script src="app.js"></script> 
+    <section  class="">
+        <div class="cards flex  gap-10">
+            <div class="card  p-20 ">
+                <h1 class="font-mono" >mardi</h1>
+                <div class="flex">
+                    <img id="im1" src="image/cloudy-day-1.svg" alt="">
+                    <h1>30°</h1>
+                </div>
+                <p>max : 30° <br>min : 16°</p>
+                <div class="border p">
+
+                </div>
+            </div>
+
+            <div class="card  p-20">
+                <h1 class="font-mono">mardi</h1>
+                <div class="flex">
+                    <img id="im1" src="image/cloudy-day-1.svg" alt="">
+                    <h1>30°</h1>
+
+                </div>
+                <p>max : 30° <br>min : 16°</p>
+                <div class="border">
+
+                </div>
+            </div>
+
+            <div class="card  p-20">
+                <h1 class="font-mono">mardi</h1>
+                <div class="flex">
+                    <img id="im1" src="image/cloudy-day-1.svg" alt="">
+                    <h1>30°</h1>
+
+                </div>
+                
+                <p>max : 30° <br>min : 16°</p>
+                <div class="border">
+
+                </div>
+            </div>
+
+            <div class="card p-20">
+                <h1 class="font-mono">mardi</h1>
+                <div class="flex">
+                    <img id="im1" src="image/cloudy-day-1.svg" alt="">
+                    <h1>30°</h1>
+
+                </div>
+                <p>max : 30° <br>min : 16°</p>
+                <div class="border">
+
+                </div>
+            </div>
+
+            <div class="card  p-20">
+                <h1 class="font-mono">mardi</h1>
+                <div class="flex">
+                    <img id="im1" src="image/cloudy-day-1.svg" alt="">
+                    <h1>30°</h1>
+
+                </div>
+                <p>max : 30° <br>min : 16°</p>
+                <div class="border">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
