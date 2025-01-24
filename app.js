@@ -32,29 +32,29 @@ async function getWeatherday(city) {
     document.getElementById("Min1").innerHTML="min : "+ data.list[0].main.temp_min + "°";
     document.getElementById("im1").src= `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr2").innerHTML=data.list[1].dt_txt  + "°C";
-    document.getElementById("temperature2").innerHTML=data.list[1].main.temp  + "°C";
-    document.getElementById("Max2").innerHTML="max : "+ data.list[1].main.temp_max+ "°";
-    document.getElementById("Min2").innerHTML="min : "+ data.list[1].main.temp_min + "°";
-    document.getElementById("im2").src= `http://openweathermap.org/img/wn/${data.list[1].weather[0].icon}@2x.png`;
+    document.getElementById("jr2").innerHTML=data.list[8].dt_txt  + "°C";
+    document.getElementById("temperature2").innerHTML=data.list[8].main.temp  + "°C";
+    document.getElementById("Max2").innerHTML="max : "+ data.list[8].main.temp_max+ "°";
+    document.getElementById("Min2").innerHTML="min : "+ data.list[8].main.temp_min + "°";
+    document.getElementById("im2").src= `http://openweathermap.org/img/wn/${data.list[8].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr3").innerHTML=data.list[2].dt_txt  + "°C";
-    document.getElementById("temperature3").innerHTML=data.list[2].main.temp  + "°C";
-    document.getElementById("Max3").innerHTML="max : "+ data.list[2].main.temp_max+ "°";
-    document.getElementById("Min3").innerHTML="min : "+ data.list[2].main.temp_min + "°";
-    document.getElementById("im3").src= `http://openweathermap.org/img/wn/${data.list[2].weather[0].icon}@2x.png`;
+    document.getElementById("jr3").innerHTML=data.list[16].dt_txt  + "°C";
+    document.getElementById("temperature3").innerHTML=data.list[16].main.temp  + "°C";
+    document.getElementById("Max3").innerHTML="max : "+ data.list[16].main.temp_max+ "°";
+    document.getElementById("Min3").innerHTML="min : "+ data.list[16].main.temp_min + "°";
+    document.getElementById("im3").src= `http://openweathermap.org/img/wn/${data.list[16].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr4").innerHTML=data.list[3].dt_txt  + "°C";
-    document.getElementById("temperature4").innerHTML=data.list[3].main.temp  + "°C";
-    document.getElementById("Max4").innerHTML="max : "+ data.list[3].main.temp_max+ "°";
-    document.getElementById("Min4").innerHTML="min : "+ data.list[3].main.temp_min + "°";
-    document.getElementById("im4").src= `http://openweathermap.org/img/wn/${data.list[3].weather[0].icon}@2x.png`;
+    document.getElementById("jr4").innerHTML=data.list[24].dt_txt  + "°C";
+    document.getElementById("temperature4").innerHTML=data.list[24].main.temp  + "°C";
+    document.getElementById("Max4").innerHTML="max : "+ data.list[24].main.temp_max+ "°";
+    document.getElementById("Min4").innerHTML="min : "+ data.list[24].main.temp_min + "°";
+    document.getElementById("im4").src= `http://openweathermap.org/img/wn/${data.list[24].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr5").innerHTML=data.list[4].dt_txt  + "°C";
-    document.getElementById("temperature5").innerHTML=data.list[4].main.temp  + "°C";
-    document.getElementById("Max5").innerHTML="max : "+ data.list[4].main.temp_max+ "°";
-    document.getElementById("Min5").innerHTML="min : "+ data.list[4].main.temp_min + "°";
-    document.getElementById("im5").src= `http://openweathermap.org/img/wn/${data.list[4].weather[0].icon}@2x.png`;
+    document.getElementById("jr5").innerHTML=data.list[32].dt_txt  + "°C";
+    document.getElementById("temperature5").innerHTML=data.list[32].main.temp  + "°C";
+    document.getElementById("Max5").innerHTML="max : "+ data.list[32].main.temp_max+ "°";
+    document.getElementById("Min5").innerHTML="min : "+ data.list[32].main.temp_min + "°";
+    document.getElementById("im5").src= `http://openweathermap.org/img/wn/${data.list[32].weather[0].icon}@2x.png`;
 
     console.log(data);
 }
