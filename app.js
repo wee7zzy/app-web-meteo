@@ -44,32 +44,33 @@ async function getWeather(url) {
 async function getWeatherday(url) {
     const response = await fetch(url  );
     let data=await response.json();
+    
 
-    document.getElementById("jr1").innerHTML=new Date(data.list[0].dt_txt).toLocaleDateString("en-US",{weekday: "long"});
+    document.getElementById("jr1").innerHTML=new Date(data.list[0].dt_txt).toLocaleDateString("fr-FR",{weekday: "long"});
     document.getElementById("temperature1").innerHTML=data.list[0].main.temp  + "°C";
     document.getElementById("Max1").innerHTML="max : "+ data.list[0].main.temp_max+ "°";
     document.getElementById("Min1").innerHTML="min : "+ data.list[0].main.temp_min + "°";
     document.getElementById("im1").src= `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr2").innerHTML=new Date(data.list[8].dt_txt).toLocaleDateString("en-US",{weekday: "long"});    
+    document.getElementById("jr2").innerHTML=new Date(data.list[8].dt_txt).toLocaleDateString("fr-FR",{weekday: "long"});    
     document.getElementById("temperature2").innerHTML=data.list[8].main.temp  + "°C";
     document.getElementById("Max2").innerHTML="max : "+ data.list[8].main.temp_max+ "°";
     document.getElementById("Min2").innerHTML="min : "+ data.list[8].main.temp_min + "°";
     document.getElementById("im2").src= `http://openweathermap.org/img/wn/${data.list[8].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr3").innerHTML=new Date(data.list[16].dt_txt).toLocaleDateString("en-US",{weekday: "long"});    
+    document.getElementById("jr3").innerHTML=new Date(data.list[16].dt_txt).toLocaleDateString("fr-FR",{weekday: "long"});    
     document.getElementById("temperature3").innerHTML=data.list[16].main.temp  + "°C";
     document.getElementById("Max3").innerHTML="max : "+ data.list[16].main.temp_max+ "°";
     document.getElementById("Min3").innerHTML="min : "+ data.list[16].main.temp_min + "°";
     document.getElementById("im3").src= `http://openweathermap.org/img/wn/${data.list[16].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr4").innerHTML=new Date(data.list[24].dt_txt).toLocaleDateString("en-US",{weekday: "long"});    
+    document.getElementById("jr4").innerHTML=new Date(data.list[24].dt_txt).toLocaleDateString("fr-FR",{weekday: "long"});    
     document.getElementById("temperature4").innerHTML=data.list[24].main.temp  + "°C";
     document.getElementById("Max4").innerHTML="max : "+ data.list[24].main.temp_max+ "°";
     document.getElementById("Min4").innerHTML="min : "+ data.list[24].main.temp_min + "°";
     document.getElementById("im4").src= `http://openweathermap.org/img/wn/${data.list[24].weather[0].icon}@2x.png`;
 
-    document.getElementById("jr5").innerHTML=new Date(data.list[32].dt_txt).toLocaleDateString("en-US",{weekday: "long"});    
+    document.getElementById("jr5").innerHTML=new Date(data.list[32].dt_txt).toLocaleDateString("fr-FR",{weekday: "long"});    
     document.getElementById("temperature5").innerHTML=data.list[32].main.temp  + "°C";
     document.getElementById("Max5").innerHTML="max : "+ data.list[32].main.temp_max+ "°";
     document.getElementById("Min5").innerHTML="min : "+ data.list[32].main.temp_min + "°";
