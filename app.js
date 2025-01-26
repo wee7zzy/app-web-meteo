@@ -10,6 +10,7 @@ async function getWeather(url) {
     const response = await fetch(url);
     let data=await response.json();
 
+
     document.getElementById("tempM").innerHTML=Math.round(data.main.temp)  + "°C";
     document.getElementById("ville").innerHTML=data.name;
     document.getElementById("Con").innerHTML=data.sys.country;
@@ -18,6 +19,25 @@ async function getWeather(url) {
     document.getElementById("descp").innerHTML=data.weather[0].description;
     document.getElementById("ImgP").src= `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
+    document.getElementById('btn').addEventListener('click', ()=> {
+        
+    
+        const cityName = document.getElementById('Srch').value.trim();   
+        const cityRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
+    
+        if (cityName === "") {
+            alert("Le champ est vide. Veuillez entrer une ville.");
+            return;
+        }
+    
+        if (!cityRegex.test(cityName)) {
+            alert("Nom de ville invalide. Veuillez réessayer avec un nom correct.");
+            return;
+        }
+    
+        console.log(`Recherche pour la ville : ${cityName}`);
+    });
+    
     console.log(data);
 }
 
