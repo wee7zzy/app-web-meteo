@@ -10,35 +10,6 @@
     border-radius: 20px;
 }
 
-img{
-    width: 400px;
-}
-
-#im1{
-    width: 100px;
-}
-#im2{
-    width: 100px;
-}
-#im3{
-    width: 100px;
-}
-#im4{
-    width: 100px;
-}
-#im5{
-    width: 100px;
-}
-.card h1{
-    font-size: x-large;
-
-}
-
-section{
-    overflow-x: auto;
-    flex-wrap: nowrap;
-}
-
 section .card{
     flex-shrink: 0;
 }
